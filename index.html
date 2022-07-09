@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CQJTU</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;400;900&family=Poppins&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fa79f509a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <h2>WEB<span>Study</span></h2>
+      <div id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <a href="#">首页</a>
+        <a href="#HTML">HTML</a>
+        <a href="#CSS">CSS</a>
+        <a href="#JS">JS</a>        
+        <a href="#TS">TS</a>
+        <a href="#summary">结业报告（简单版）</a>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <p>构建网站的基本知识学习</p>
+      <a href="#HTML" class="hero-btn">访问以了解更多</a>
+    </div>
+  </section>
+
+  <section id="HTML">
+    <h1>HTML Information We Offer</h1>
+    <p>粗略掌握了使用它来编写简单的网页<br>
+      详情可点击<a href="http://t.csdn.cn/UhvAz" target="_blank">HTML</a></p>
+    <div class="row">
+      <div class="col">
+        <h3>整体结构</h3>
+        <p>整个 HTML 就由一个个元素组成(可以嵌套),而元素则一般由一对标签(tag)构成, 一个元素由开始标签，内容，结束标签组成。<br>
+          <xmp><!DOCTYPE html></xmp>
+           声明文档类型。可有可无<br>
+          <xmp><html></html></xmp>
+          包裹了整个完整的页面，是一个根元素，其它元素都嵌套到其中<br>
+          <xmp><head></head></xmp>
+          包含了所有你想包含在HTML页面中但不想在HTML页面中显示的内容<br>
+          <xmp><meta charset="utf-8"></xmp>
+          设置文档使用utf-8字符集编码<br>
+          <xmp><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></xmp>
+          指定页面的图标，出现在浏览器标签上<br>
+          <xmp><title></title></xmp>
+          设置页面标题，出现在浏览器标签上<br>
+          <xmp><body></body></xmp>
+          包含能在页面看到的所有内容<br>
+          </p>
+      </div>
+      <div class="col">
+        <h3>各种语法说明</h3>
+        <p>以下是基本的易上手的HTML语法。
+            <xmp><h1>~<h6></xmp>
+            分为六级标题，一级最大，六级最小<br>
+            <xmp><p></p></xmp>
+            显示文本内容
+            <xmp><del></del></xmp>
+            划掉文本内容
+            <xmp><strong></strong></xmp>
+            加粗文本内容
+            <xmp><em></em></xmp>
+            斜体
+            <xmp><a href="http://www.baidu.com/" target="_blank">百度一下</a></xmp>
+            超链接：其中`_blank`表示在新的页面打开`_self`表示当前页面打开）
+            <xmp><img src="https://mdbootstrap.com/img/logo/mdb192x192.jpg"></xmp>
+            图片的展示
+            <xmp><table></xmp>
+            表格的呈现方式
+            <xmp><ul>或<ol></xmp>
+            列表的呈现方式
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="CSS">
+    <h1>CSS Information We Offer</h1>
+    <p>对CSS有一个粗略的了解,可以使用它来对页面进行美化<br>
+      详情可点击<a href="http://t.csdn.cn/WUmAr" target="_blank">CSS</a>
+    </p>
+    
+    <div class="row">
+      <div id="col1">
+        <h3>语法基本说明</h3>
+        <p>一条CSS样式规则由两个主要的部分构成:选择器,以{}包裹的一条或多条声明。<br>
+          1. 选择器是需要改变样式的对象；<br>
+          2. 每一条声明由一个属性和一个值组成，属性和值之间用冒号分开，声明之间用分号分开；<br>
+          元素选择器,id选择器前有`#`号,class选择器前有`.`。<br>
+          <br>
+          让CSS对页面生效<br>
+          - 外部样式表；<br>
+          - 内部样式表；<br>
+          - 内联样式。<br>
+          </p>
+      </div>
+      <div id="col1">
+        <h3>其他基础知识</h3>
+        <p>
+          `overflow`属性处理溢出部分，其属性有以下四个值<br>
+
+          - `visible`默认值，溢出部分不被裁减，在区域外面显示<br>
+          -  `hidden`裁剪溢出部分且不可见<br>
+          - `scroll`裁剪溢出部分，提供上下左右滚动条供显示<br>
+          - `auto`裁剪溢出部分，视情况提供滚动条<br>
+
+          <br>
+
+          `float`属性让某元素水平方向上向左向右进行一定，其周围其他元素也会重新排列；<br>
+
+          一个浮动元素会尽量向左或向右移动，直到外边缘碰到包含框或者另一个浮动框的边框为止；<br>
+
+          一个元素浮动后,其后的元素将尽可能包围它,或者说出现在这个浮动元素的左或右方。如果希望浮动元素后面的元素在其下方显示,可使用clear: both样式来进行清除。<br>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="JS">
+    <h1>JS Information We Offer</h1>
+    <p>JS与C语言有许多相似的语法特点。JS实现了实时且动态可交互的能力,从而能够在一个静态的HTML页面提供动态实时信息。<br>
+    详情可点击<a href="http://t.csdn.cn/l9JbU" target="_blank">JS</a></p>
+    <div class="row">
+      <div class="col">
+        <h3>条件语句</h3>
+        <p>
+          if...else语句<br>
+
+          <xmp>if (condition)//使用小写的if
+            {
+               //当条件为true时执行的代码
+            }
+            else
+            {
+               //当条件不为true时执行的代码
+            }</xmp>
+          
+            <br>
+
+           switch语句<br>
+ 
+           <xmp> switch(n)
+            {
+                 case 1 :
+                      //执行代码块1
+                      break;//阻止代码自动向下一个case执行
+                 case 2 :
+                      //执行代码块2
+                      break;  
+                 default:
+                     //匹配不存在时做的事情
+            }</xmp>
+          </p>
+      </div>
+      <div class="col">
+        <h3>循环语句</h3>
+        <p>for循环<br>
+ 
+          <xmp>for (开始前的语句;循环条件;执行后的语句)
+            {
+             //代码块
+            }</xmp>
+          
+            <br>
+
+           while循环<br>
+ 
+           <xmp>while(条件)
+            {
+              //代码块
+            }
+            while的变体
+            do
+            {
+              //代码块
+            }
+            while(条件);</xmp>
+           
+        </p>
+      </div>
+
+      <div class="col">
+        <h3>对象</h3>
+        <p>创建：<br>
+
+          1. 直接new一个新对象<br>
+     
+          2. 直接使用字符定义一个新对象<br>
+     
+           属性：<br>
+     
+           键值对在JS对象通常称为对象属性;<br>
+     
+     
+           方法：<br>
+     
+           即调用对象定义时创建的函数;<br>
+
+           访问对象方法，例子如下：<br>
+
+           <xmp>
+            methodname : function()
+            {
+            //代码;
+           }
+           objectname.methodname();
+           objectname.methodname;</xmp>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="TS">
+    <h1>TS Information We Offer</h1>
+    <p>TS作为JS的超集,功能比JS更加齐全,可以进行纯JS的编写,也可以给JS添加特定的语言扩展,让网页更加动态。<br>
+    详情可点击<a href="http://t.csdn.cn/9a8p3" target="_blank">TS</a></p>
+    <div class="row">
+      <div class="col">
+        <h3>基本语法</h3>
+        <p>
+          同JS一样,TS也要区分大小写;<br>
+          -   TS会忽略程序中出现的空格、制表符和换行符;<br>
+          -   单行注释：`//`；多行注释`/**/`;<br>
+          变量<br>
+          1. 声明<br>
+     与JS的`var`关键字不一样,TS采用`let`或`const`申明变量，并且在后面加上类型说明;<br>
+     
+          2. 命名规则<br>
+     只能出现数字、字母、下划线、$、且不能以数字开头，可采用驼峰命名法。<br>
+     
+          运算符（选取几个例子)：算数运算符:`+ - * /`，赋值运算符:`= += -=`。
+          </p>
+      </div>
+      <div class="col">
+        <h3>函数</h3>
+        <p>TS是由JS发展过来的,在众多语法方面和JS大致相同,因此:<br>
+
+          - 函数的定义，大致的格式如下：<br>
+       
+          <xmp>function functionname()
+            {
+               //代码块
+            }
+          </xmp>
+                
+       
+          - 函数的调用，大致格式如下：<br>
+       
+          <xmp>functionname();
+          </xmp>
+                
+          - 在调用函数时，可以传递参数，用`,`隔开；<br>
+          - 可选参数，可用`?`代替，**可选参数必须跟在必需参数后面**;<br>
+          - 代码块加入`return`语句说明其有返回值；<br>
+           
+        </p>
+      </div>
+
+      <div class="col">
+        <h3>对象</h3>
+        <p>创建:<br>
+
+          1.先定义一个接口,例如:Student:
+               
+          <xmp>interface Student{
+            name:string;
+            sex:string;
+        }</xmp>
+                 
+     
+          2.接着创建一个对象,例如:stu:
+     
+          <xmp>let stu : Student = {
+            name:'yyds',
+            sex:'man'
+         }
+        </xmp>
+                  
+     
+        - 若要有缺少可以在属性定义的后面添加`?`<br>
+        -  或者直接使用字符定义一个新对象,和JS一致,例如:<br>
+     
+        <xmp>var objectname = {
+          //属性和方法;
+        }</xmp>
+                  
+        
+        - 对象方法:其调用方式与JS一致,此处不再详细描述。
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+  <section id="summary">
+    <h1>结业报告</h1>
+    <p></p>
+    <div class="row">
+      <div class="col">
+        <h3>结业报告（简介）</h3>
+        <p>
+           本次的结业网页设计选择的是任务A，搭建静态网站。此次网站的主题灵感来自于所编写的web课上的各种学习报告，因此选择设计一个
+        于web学习有关的网站。
+           详情点击<a href="./summary.md" target="_blank">结业报告</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  
+  <script>
+    var navLinks = document.getElementById('navLinks');
+       
+    function showMenu() {
+      navLinks.style.right = '0';
+      navLinks.addEventListener('click',function(){
+        hideMenu();
+      })
+      
+    }
+    function hideMenu() {
+      navLinks.style.right = '-30%';
+    }
+
+    function showFullImage(event) {
+      // 设置要全屏显示的图片src
+      document.getElementById('fullImage').src = event.target.src;
+      // 得到Y滚动条宽度
+      // innerWidth是以像素为单位的窗口的内部宽度。如果垂直滚动条存在，则这个属性将包括它的宽度
+      // offsetWidth 是一个只读属性，返回一个元素的布局宽度
+      var scrollbarWidth = window.innerWidth - document.body.offsetWidth;
+      // body不能滚动      
+      document.body.style.overflowY = 'hidden';
+      // 防止页面在隐藏滚动条时闪动      
+      document.body.style.marginRight = scrollbarWidth + 'px';
+
+      var popup = document.getElementById('popup');
+      popup.style.display = 'flex';
+      popup.style.animation = 'fadein 0.5s';
+      popup.onclick = function () {
+        popup.style.animation = 'fadeout 0.6s';
+        // 延时将display置为none，以让有时间动画。注意设置隐退的时间多一点会更平滑。
+        setTimeout(() => {
+          document.body.style.overflowY = 'auto';// body恢复滚动
+          document.body.style.marginRight = 0;          
+          popup.style.display = 'none';
+        }, 500);
+      }
+    }
+  </script>
+</body>
+
+</html>
